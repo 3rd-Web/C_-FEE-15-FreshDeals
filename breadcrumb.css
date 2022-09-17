@@ -1,0 +1,25 @@
+.breadcrumb > li {
+  display: inline;
+}
+
+.breadcrumb li.location+li::before {
+  content: "/ ";
+}
+
+.breadcrumb li.attribute a {
+  color: orangered;
+  opacity: .60
+}
+
+.breadcrumb li.attribute a:hover {
+  color: orangered;
+  opacity: 1;
+}
+
+.breadcrumb li.attribute::after {
+  content: "x";
+  color: red;
+  font-weight: bold;
+  font-size: 10px;
+  vertical-align: super;
+}
